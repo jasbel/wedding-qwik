@@ -1,5 +1,6 @@
 import { Slot, component$ } from '@builder.io/qwik';
 import styles from './timer.module.css';
+import Section from '~/components/layout/section/section';
 
 export default component$(() => {
   return (
@@ -7,12 +8,12 @@ export default component$(() => {
             <figure>
                 <img src="./section/timer.png" />
             </figure>
-    <div class={styles.section}>
+    <Section id='timer' className={styles.section}>
       <h3>
         <Slot name="title" />
       </h3>
       <Slot />
-    </div>
+    </Section>
     </>
   );
 });

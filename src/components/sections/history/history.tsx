@@ -10,7 +10,7 @@ export default component$(() => {
                 <img src="./section/history.png" />
             </figure>
 
-            <Section>
+            <Section id="history">
                 <div class={styles.container}>
                     <h3 class={styles.title}>Nuestra historia</h3>
                     <div class={styles.item__container}>

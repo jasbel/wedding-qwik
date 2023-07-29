@@ -1,9 +1,14 @@
 import { Slot, component$ } from '@builder.io/qwik';
 import styles from './section.module.css';
 
-export default component$(() => {
+interface ISectionProps {
+  id?: string;
+  className?: string;
+}
+
+export default component$(({id, className}: ISectionProps) => {
   return (
-    <div class={styles.section}>
+    <div class={[styles.section, className]} id={id}>
       <h3>
         <Slot name="title" />
       </h3>

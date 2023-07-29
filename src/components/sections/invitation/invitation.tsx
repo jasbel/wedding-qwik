@@ -1,6 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./invitation.module.scss";
 import ItemInvitation from "./item-invitation";
+import Section from "~/components/layout/section/section";
 
 export default component$(() => {
     return (
@@ -8,7 +9,7 @@ export default component$(() => {
             <figure>
                 <img src="./section/invitation.png" />
             </figure>
-            <div class={styles.section}>
+            <Section className={styles.section} id="invitation">
                 <div>
                     <ItemInvitation title="Votos" date="Lunes, Julio 30 2022" hour="06:00 PM" direction="Villa Pagador" icon="ring" btnTitle="Abrir Mapa" />
                     <div>
@@ -18,7 +19,7 @@ export default component$(() => {
                     </div>
                     <ItemInvitation title="Recepcion" date="Lunes, Julio 30 2022" hour="08:00 PM" direction="Villa Pagador" icon="couple" btnTitle="Ver Direccion" />
                 </div>
-            </div>
+            </Section>
         </>
     );
 });
