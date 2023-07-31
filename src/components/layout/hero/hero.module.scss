@@ -10,37 +10,15 @@
 
   position: relative;
 
-  p {
-    color: white;
-    margin: 0;
-    font-size: 1rem;
-  }
-
-  &__item-container {
-    width: 100%;
-    height: 350px;
-  }
-
-  &__item {
-    position: absolute;
-    &--left {
-      bottom: 24px;
-      left: 120px;
-    }
-    &--center {
-      bottom: 0;
-      left: 50%;
-      transform: translate(-50%, 50%);
-      z-index: 10;
-    }
-    &--right {
-      bottom: 24px;
-      right: 120px;
-    }
-  }
+  // p {
+  //   color: white;
+  //   margin: 0;
+  //   font-size: 1rem;
+  // }
 }
 
 .box {
+  // position: absolute;
   padding: 30px 60px;
   border-radius: 30px;
   display: flex;
@@ -48,6 +26,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  background-color: white;
 
   &__description {
     font-family: "Montaga";
@@ -73,18 +52,68 @@
   &__btn {
     font-family: "Acme";
     font-style: normal;
-    font-weight: 400;
     font-size: 23.7281px;
     line-height: 30px;
+    background-color: transparent;
     /* identical to box height */
 
     text-decoration-line: underline;
+    font-weight: bold;
+    padding: 0;
 
     color: #19381f;
   }
 }
 
 .item {
+  // position: absolute;
+  &--left {
+    bottom: 24px;
+    left: 120px;
+  }
+  &--center {
+    bottom: 0;
+    left: 50%;
+    // transform: translate(-50%, 50%);
+    z-index: 10;
+  }
+  &--right {
+    bottom: 24px;
+    right: 120px;
+  }
+
+  &__container {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+.item-hero {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url(/images/bg-pretty.png);
+    background-size: cover;
+    background-position: center;
+    width: calc(100% + 50px);
+    height: calc(100% + 135px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &--small {
+    &::before {
+      width: calc(100% + 45px);
+      height: calc(100% + 70px);
+    }
+  }
+
   &__content {
     width: 366px;
     height: 585px;

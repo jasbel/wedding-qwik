@@ -9,11 +9,8 @@ interface IItemHeroProps {
 
 export default component$(({ urlBg, small }: IItemHeroProps) => {
   return (
-    <div class={styles.item}>
-      <div
-        class={[styles.item__content, small ? styles["item__content--small"] : undefined]}
-        style={`background-image: url(${urlBg})`}
-      ></div>
+    <div class={[styles["item-hero"], small ? styles["item-hero--small"] : undefined]}>
+      <div class={[styles["item-hero__content"], small ? styles["item-hero__content--small"] : undefined]} style={`background-image: url(${urlBg})`}></div>
     </div>
   );
 });

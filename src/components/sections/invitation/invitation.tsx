@@ -9,7 +9,7 @@ export default component$(() => {
             <figure>
                 <img src="./section/invitation.png" />
             </figure>
-            <Section className={styles.section} id="invitation">
+            <Section class={styles.section} id="invitation">
                 <div>
                     <ItemInvitation title="Votos" date="Lunes, Julio 30 2022" hour="06:00 PM" direction="Villa Pagador" icon="ring" btnTitle="Abrir Mapa" />
                     <div>

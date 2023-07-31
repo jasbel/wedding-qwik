@@ -8,7 +8,7 @@ export default component$(() => {
       <figure>
         <img src="./section/transportation.png" />
       </figure>
-      <Section id="transportation" className={styles.section}>
+      <Section id="transportation" class={styles.section}>
         <h3>
           <Slot name="title" />
         </h3>

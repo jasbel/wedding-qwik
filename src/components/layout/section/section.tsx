@@ -3,10 +3,10 @@ import styles from './section.module.css';
 
 interface ISectionProps {
   id?: string;
-  className?: string;
+  class?: string;
 }
 
-export default component$(({id, className}: ISectionProps) => {
+export default component$(({id, class: className}: ISectionProps) => {
   return (
     <div class={[styles.section, className]} id={id}>
       <h3>
