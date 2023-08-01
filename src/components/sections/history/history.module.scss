@@ -1,6 +1,6 @@
 .container {
   padding-top: 330px;
-  background-color: #1A381F;
+  background-color: #1a381f;
 }
 
 .title {
@@ -24,8 +24,10 @@
   }
 
   &__content {
-    width: 260px;
-    height: 430px;
+    // width: 260px;
+    // height: 430px;
+    width: 205px;
+    height: 290px;
     margin-left: 40px;
     margin-right: 40px;
     border-radius: 200px;
@@ -48,8 +50,7 @@
       -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
       -webkit-mask-composite: xor;
       mask-composite: exclude;
-    margin: -8px;
-
+      margin: -8px;
     }
   }
 
@@ -75,5 +76,37 @@
     /* or 25px */
 
     color: #ffffff;
+
+    &::first-letter {
+      font-size: 50px;
+    }
+  }
+}
+
+.history {
+  position: relative;
+
+  &__floating {
+    position: absolute;
+    top: 6%;
+    right: 7%;
+    rotate: 160deg;
+    width: 350px;
+    display: flex;
+  }
+
+  &__btn-container {
+    display: flex;
+    justify-content: end;
+    padding-right: 10%;
+    gap: 13px;
+
+    button {
+      padding: 10px 37px;
+      background-color: transparent;
+      border: 1px solid white;
+      border-radius: 50px;
+      color: white;
+    }
   }
 }
