@@ -6,10 +6,6 @@ import ItemHero from "./item-hero";
 export default component$(() => {
   return (
     <>
-      <figure class="">
-        <img src="./section/hero.png" />
-      </figure>
-
       <div class={["container", styles.hero]}>
         <div class={styles.box}>
           <p class={styles.box__description}>Celebrando nuestro dia mas especial</p>

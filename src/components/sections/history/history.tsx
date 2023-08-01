@@ -6,9 +6,7 @@ import styles from "./history.module.scss";
 export default component$(() => {
     return (
         <>
-            <figure>
-                <img src="./section/history.png" />
-            </figure>
+           
 
             <Section id="history">
                 <div class={styles.container}>
@@ -29,6 +27,10 @@ export default component$(() => {
                     </div>
                 </div>
             </Section>
+
+            <figure>
+                <img src="./section/history.png" />
+            </figure>
         </>
     );
 });
