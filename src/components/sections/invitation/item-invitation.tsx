@@ -17,7 +17,7 @@ export default component$(
         <div class={styles.item}>
           <h2 class={styles.item__title}>{title}</h2>
           <p class={styles.item__description}>{btnTitle}</p>
-          <button title="" />
+          <button class={styles.item__btn} title="btnTitle" >{btnTitle}</button>
         </div>
       </div>
     );

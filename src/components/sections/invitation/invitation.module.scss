@@ -16,7 +16,6 @@
   }
 }
 
-
 @media screen and (min-width: 600px) {
   .section {
     margin: 0;
@@ -24,11 +23,62 @@
 }
 
 .item {
-  &__title {}
-  &__content {
-    
+  border: 1px solid #bb9096;
+  width: 100%;
+  height:  100%;
+  box-sizing: content-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  &__title {
+    color: #965a00;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: "Dancing Script";
+    font-size: 26.694px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96.5%; /* 25.76px */
   }
-  &__description {}
+  &__content {
+    width: 235px;
+    height: 271px;
+    padding: 12px;
+    background-color: #fedfe3;
+    text-align: center;
+    position: relative;
+  }
+  &__description {
+    color: #000;
+    font-family: Caladea;
+    font-size: 10.381px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__btn {
+    width: 174.253px;
+    height: 23.728px;
+    flex-shrink: 0;
+    color: #fff;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 9.64px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    letter-spacing: 0.386px;
+    text-transform: uppercase;
+    background-color: #B95C50;
+    padding: 0;
+    border-radius: 50px;
+  }
 }
 
-.photoContent {}
+.photoContent {
+  width: 430px;
+  height: 494px;
+}

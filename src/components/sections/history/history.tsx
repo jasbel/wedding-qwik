@@ -35,9 +35,6 @@ export default component$(() => {
         </div>
       </Section>
 
-      <figure>
-        <img src="./section/history.png" />
-      </figure>
     </>
   );
 });
