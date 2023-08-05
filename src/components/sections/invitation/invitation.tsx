@@ -7,20 +7,29 @@ export default component$(() => {
   return (
     <>
       <Section class={styles.section} id="invitation">
-        <div>
-          <ItemInvitation title="Votos" date="Lunes, Julio 30 2022" hour="06:00 PM" direction="Villa Pagador" icon="ring" btnTitle="Abrir Mapa" />
-          <div>
+        <div class={styles.invitation__wrap}>
+          <ItemInvitation
+            title="Votos"
+            date="Lunes, Julio 30 2022"
+            hour="06:00 PM"
+            direction="Villa Pagador"
+            icon="rings.png"
+            btnTitle="Abrir Mapa"
+          />
             <figure class={styles.photoContent}>
               <img src="./images/photo-rectangle.png" />
             </figure>
-          </div>
-          <ItemInvitation title="Recepcion" date="Lunes, Julio 30 2022" hour="08:00 PM" direction="Villa Pagador" icon="couple" btnTitle="Ver Direccion" />
+          <ItemInvitation
+            title="Recepcion"
+            date="Lunes, Julio 30 2022"
+            hour="08:00 PM"
+            direction="Villa Pagador"
+            icon="coups.png"
+            btnTitle="Ver Direccion"
+            position="bottom"
+          />
         </div>
       </Section>
-
-      <figure>
-        <img src="./section/invitation.png" />
-      </figure>
     </>
   );
 });

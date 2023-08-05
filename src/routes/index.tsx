@@ -8,10 +8,10 @@ import Photos from "~/components/sections/photos/photos";
 import Schedule from "~/components/sections/schedule/schedule";
 import Timer from "~/components/sections/timer/timer";
 import Transportation from "~/components/sections/transportation/transportation";
-import Counter from "~/components/starter/counter/counter";
 import Hero from "~/components/layout/hero/hero";
-import Infobox from "~/components/starter/infobox/infobox";
-import Starter from "~/components/starter/next-steps/next-steps";
+// import Counter from "~/components/starter/counter/counter";
+// import Infobox from "~/components/starter/infobox/infobox";
+// import Starter from "~/components/starter/next-steps/next-steps";
 
 export default component$(() => {
   return (
@@ -26,16 +26,16 @@ export default component$(() => {
       <Photos />
       <Timer />
 
-      <Starter />
+      {/* <Starter /> */}
 
-      <div class="container container-center container-flex container-spacing-xl">
+      {/* <div class="container container-center container-flex container-spacing-xl">
         <Counter />
         <Infobox>
           <div q:slot="title" class="icon icon-cli">
             CLI Commands
           </div>
         </Infobox>
-      </div>
+      </div> */}
     </>
   );
 });
