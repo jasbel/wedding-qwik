@@ -1,5 +1,5 @@
 import { Slot, component$ } from '@builder.io/qwik';
-import styles from './section.module.css';
+import styles from './section.module.scss';
 
 interface ISectionProps {
   id?: string;

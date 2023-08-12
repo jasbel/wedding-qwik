@@ -1,0 +1,12 @@
+@import "src/styles/shared";
+
+.section {
+  // color: white;
+  // font-size: 0.8rem;
+  // line-height: 2;
+  /* margin: 0 0 40px; */
+  margin: 0;
+
+  @include mq(pl, 12, $sm);
+  @include mq(pr, 12, $sm);
+}

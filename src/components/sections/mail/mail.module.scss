@@ -1,3 +1,5 @@
+@import "src/styles/shared";
+
 .section {
   color: black;
   display: flex;
@@ -10,11 +12,13 @@
 .box {
   text-align: center;
   color: var(--6, #b95c50);
-  width: 396px;
-  height: 596px;
+  @include r(w, 300, 396);
+  @include r(h, 400, 596);
+  @include mq(w, '100%', $sm);
+  @include mq(h, auto, $sm);
   border-radius: 11.996px;
   background: #faecea;
-  box-shadow: 0px 4.7px 6px 2.3992538452148438px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4.7px 6px 2.3px rgba(0, 0, 0, 0.25);
   padding: 34px 20px 24px;
 }
 .title {

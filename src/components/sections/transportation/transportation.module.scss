@@ -1,3 +1,5 @@
+@import "src/styles/shared";
+
 .section {
   padding-top: 81px;
   padding-bottom: 81px;
@@ -13,7 +15,7 @@
   color: #19381f;
   text-align: center;
   font-family: ABeeZee;
-  font-size: 59.32px;
+  @include r(fz, 37, 59);
   font-style: normal;
   font-weight: 400;
   line-height: normal;
@@ -24,25 +26,27 @@
   color: #19381f;
   text-align: center;
   font-family: Poppins;
-  font-size: 14.83px;
+  @include r(fz, 12, 15);
   font-style: normal;
   font-weight: 400;
-  line-height: 185.5%; /* 27.51px */
+  line-height: 185%;
 }
 
 .items-container {
   display: flex;
   gap: 25px;
   justify-content: center;
+  overflow-x: scroll;
 }
 
 .item {
   color: #19381f;
-  width: 211px;
-  min-height: 350px;
+  @include r(w, 180, 211);
+  @include r(mh, 220, 350);
+
   border-radius: 1000px;
-  padding: 6px;
-  border: 0.742px solid #19381f;
+  padding: 12px;
+  border: 1px solid #19381f;
   text-align: center;
   display: flex;
   flex-direction: column;

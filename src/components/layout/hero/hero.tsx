@@ -9,7 +9,7 @@ export default component$(() => {
       <div class={["container", styles.hero]}>
         <div class={styles.box}>
           <p class={styles.box__description}>Celebrando nuestro dia mas especial</p>
-          <h2 class={styles.box__title}>Andre & Lurdes{/* Asbel & Loida */}</h2>
+          <h2 class={styles.box__title}>Asbel & Loida</h2>
 
           <p class={styles.box__description}>Julio 20, 2023 - Bolivia, Cbba.</p>
 

@@ -5,7 +5,7 @@ import type { RequestHandler } from "@builder.io/qwik-city";
 import Header from "~/components/layout/header/header";
 import Footer from "~/components/layout/footer/footer";
 
-import styles from "./styles.css?inline";
+import styles from "./styles.scss?inline";
 
 export const onGet: RequestHandler = async ({ cacheControl }) => {
   // Control caching for this request for best performance and to reduce hosting costs:

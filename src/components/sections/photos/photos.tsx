@@ -1,4 +1,4 @@
-import { Slot, component$ } from "@builder.io/qwik";
+import { component$ } from "@builder.io/qwik";
 import Section from "~/components/layout/section/section";
 import styles from "./photos.module.scss";
 import ItemPhoto from "./item-photo";
@@ -23,10 +23,8 @@ export default component$(() => {
       </div>
 
       <div class={styles["item-container"]}>
-        {data.map((d) => (
-          <>
-            <ItemPhoto url={d.url} />
-          </>
+        {data.map((d, i) => (
+            <ItemPhoto key={i} url={d.url} />
         ))}
       </div>
       <div class={styles.progress__wrap}>

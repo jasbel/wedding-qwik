@@ -1,3 +1,5 @@
+@import "src/styles/shared";
+
 .section {
   padding-top: 24px;
   padding-bottom: 24px;
@@ -7,9 +9,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 50px;
-  padding-right: 50px;
   margin-bottom: 24px;
+
+  
+  @include r(pr, 12, 50);
+  @include r(pl, 12, 50);
 }
 
 .button-container {
@@ -26,12 +30,13 @@
 }
 
 .item-container {
-  padding-left: 45px;
   display: flex;
   gap: 31px;
-  // background-color: red;
   overflow-x: scroll;
   padding-bottom: 30px;
+
+  @include r(pl, 24, 45);
+
 }
 
 .item {
@@ -45,7 +50,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 0.742px solid #19381f;
+    border: 1px solid #19381f;
     border-radius: 1000px;
     padding: 12px 9px;
     overflow: hidden;

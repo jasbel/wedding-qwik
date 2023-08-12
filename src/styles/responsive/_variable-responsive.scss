@@ -1,0 +1,89 @@
+// ---------------------------------- \\
+// Layout Breakpoints
+// ---------------------------------- \\
+$max-width: 1440px;
+
+// ---------------------------------- \\
+// Font Sizes Default Resposive
+// ---------------------------------- \\
+$font-size-small: 16px;
+
+// ---------------------------------- \\
+// Variables for Media queries and B5
+// ---------------------------------- \\
+
+//For Mediaquery inline or @include
+$xxs: 360;
+$xs: 420;
+$sm: 576;
+$md: 768;
+$lg: 992;
+$xl: 1200;
+$xxl: 1440;
+$xxxl: 1650;
+$xxxxl: 1950;
+
+// ------------------------------------------ \\
+// Responsive Variables for responsive mixins
+// ------------------------------------------ \\
+
+//For mixin Responsive
+$phone-responsive: $xxs;
+$tablet-responsive: $md;
+$desktop-responsive: $xxl;
+
+//For Media Query block
+$dd: 0.02; //diference
+$phone-x-small: $xxs + px;
+$phone-small: ($xs - $dd) + px;
+$phone: ($sm - $dd) + px;
+$phone-large: ($md - $dd) + px;
+$tablet-small: 790px;
+$tablet: ($lg - $dd) + px;
+$desktop-small: 1090px;
+$desktop: ($xl - $dd) + px;
+$desktop-medium: ($xxl - $dd) + px;
+$desktop-large: 1650px;
+$desktop-x-large: 1950px;
+
+$phone-default: $phone-x-small; //default
+$tablet-default: $tablet;
+$desktop-default: $desktop-medium; //default
+
+// ------------------------------------------ \\
+// Responsive Mixins
+// ------------------------------------------ \\
+
+/// Var:  Prop for responsive global ------------------\\
+$property-map: (
+  b: bottom,
+  bz: background-size,
+  fz: font-size,
+  br: border-radius,
+  h: height,
+  l: left,
+  lh: line-height,
+  m: margin,
+  maxh: max-height,
+  maxw: max-width,
+  mb: margin-bottom,
+  mh: min-height,
+  minh: min-height,
+  minw: min-width,
+  ml: margin-left,
+  mnh: min-height,
+  mnw: min-width,
+  mr: margin-right,
+  mt: margin-top,
+  mw: max-width,
+  mxh: max-height,
+  mxw: max-width,
+  p: padding,
+  pb: padding-bottom,
+  pl: padding-left,
+  pr: padding-right,
+  pt: padding-top,
+  r: right,
+  t: top,
+  w: width,
+);

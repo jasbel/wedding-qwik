@@ -12,7 +12,9 @@ export default component$(({ title = "", description = "", urlBg }: IItemHistory
     <div class={styles.item__content} style={`background-image: url(${urlBg})`}>
       <div class={styles.item}>
         <h2 class={styles.item__title}>{title}</h2>
-        <p class={styles.item__description}>{description}</p>
+        <div class={styles.item__descriptionWrap} >
+          <p class={styles.item__description}>{description}</p>
+        </div>
       </div>
     </div>
   );
