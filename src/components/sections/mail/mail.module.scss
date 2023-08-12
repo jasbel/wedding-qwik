@@ -47,6 +47,15 @@
 .input {
   &__wrap {
     margin-bottom: 25px;
+
+    &--checkbox {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    &--button {
+      margin: 0 24px;
+    }
   }
   &__label {
     color: var(--6, #b95c50);
@@ -59,6 +68,10 @@
     width: 100%;
     display: block;
     margin-bottom: 8px;
+  }
+
+  &__wrap--checkbox &__label {
+    margin-bottom: 0;
   }
   &__value {
     border-radius: 5.998px;
@@ -73,6 +86,13 @@
     line-height: 38.388px; /* 246.154% */
     letter-spacing: 0.528px;
     width: 100%;
+
+    &--checkbox {
+      width: auto;
+      min-width: 25px;
+      min-height: 25px;
+      margin-right: 28px;
+    }
   }
 
   &__button {

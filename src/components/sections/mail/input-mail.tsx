@@ -10,16 +10,16 @@ interface IInputMail {
 export default component$(({ label, value, type = "text" }: IInputMail) => {
   if (type === "checkbox")
     return (
-      <div class={styles.input__wrap}>
+      <div class={[styles.input__wrap, styles['input__wrap--checkbox']]}>
+        <input class={[styles.input__value, styles["input__value--checkbox"]]} type={type} value={value} />
         <label class={styles.input__label}>{label}</label>
-        <input class={styles.input__value} type={type} value={value} />
       </div>
     );
 
   if (type === "submit")
     return (
-      <div class={styles.input__wrap}>
-        <button class={styles.input__button} type="submit">{label}</button>
+      <div class={[styles.input__wrap, styles['input__wrap--button']]}>
+        <button class={[styles.input__button, styles["input__button"]]} type="submit">{label}</button>
       </div>
     );
 

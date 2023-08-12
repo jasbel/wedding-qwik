@@ -26,9 +26,6 @@ export default component$(() => {
           </form>
         </div>
       </Section>
-      <figure>
-        <img src="./section/mail.png" />
-      </figure>
     </>
   );
 });
