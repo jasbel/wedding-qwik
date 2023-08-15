@@ -10,6 +10,7 @@ interface IItemHistoryProps {
 export default component$(({ title = "", description = "", urlBg }: IItemHistoryProps) => {
   return (
     <div class={styles.item__content} style={`background-image: url(${urlBg})`}>
+      {/* <div class={styles.item__bordered}></div> */}
       <div class={styles.item}>
         <h2 class={styles.item__title}>{title}</h2>
         <div class={styles.item__descriptionWrap} >

@@ -19,19 +19,22 @@
   @include r(mb, 50, 100);
 }
 .item {
-  // border: 2px solid transparent;
-  // background: linear-gradient(to bottom, #e1ed07 0%, #81856d 100%) 1;
   margin: 4px;
+  z-index: 10;
+  position: relative;
 
   &__container {
     padding: 12px;
-    display: flex;overflow-x:scroll ;
+    display: flex;
+    overflow-x: scroll;
     @include r(mb, 24, 50);
   }
 
   &__content {
-    width: 205px;
-    height: 290px;
+    width: 100%;
+    height: 100%;
+    min-width: 205px;
+    min-height: 290px;
     border-radius: 200px;
     @include padding-responsive(72, 24, 27, 12);
     @include r(ml, 12, 40);
@@ -101,7 +104,7 @@
     right: 7%;
     rotate: 160deg;
     display: flex;
-    
+
     @include r(w, 200, 350);
   }
 
