@@ -57,7 +57,7 @@ export default component$(() => {
   const data = useSignal(dataSchedule);
   return (
     <>
-      <Section id="schedule">
+      <Section id="schedule" class={styles.section}>
         <div class={styles.wrap}>
           <div class={styles.container}>
             <div class={[styles.content, styles["content--right"]]}>

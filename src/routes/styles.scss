@@ -1,3 +1,5 @@
+@import 'src/styles/responsive';
+
 /* THIS FILE IS JUST FOR EXAMPLES, DELETE IT IF YOU DON'T NEED IT */
 
 /* SHELL ---------------------------------------- */
@@ -74,7 +76,7 @@ ul {
 /* CONTAINER ------------------------------------ */
 .container {
   margin: 0 auto;
-  padding: 30px 40px;
+  @include padding-responsive(30, 24, 40, 12);
 }
 .container.container-purple {
   background: var(--qwik-light-purple);

@@ -7,7 +7,8 @@ import { Points } from "~/components/icons/points";
 export default component$(() => {
   return (
     <>
-      <Section id="history" class={styles.history}>
+      <Section id="history" >
+        <div class={styles.history}>
         <div class={styles["history__floating"]}>
           <Points />
         </div>
@@ -23,18 +24,22 @@ export default component$(() => {
             <ItemHistory urlBg="./images/photo4.png" />
             <ItemHistory
               title="2"
-              description="         Duis facilisi pretium gravida volutpat commodo eu tellus sed. Hac ridiculus cras morbi nec. Volutpat urna ac aliquet tincidunt commodo mus elementum congue. Tempus aliquet ut venenatis sollicitudin tellus diam, vulputate aenean. Aenean lectus tempus elementum sit at pellentesque. 
+              description=" Duis facilisi pretium gravida volutpat commodo eu tellus sed. Hac ridiculus cras morbi nec. Volutpat urna ac aliquet tincidunt commodo mus elementum congue. Tempus aliquet ut venenatis sollicitudin tellus diam, vulputate aenean. Aenean lectus tempus elementum sit at pellentesque. 
 "
             />
             <ItemHistory urlBg="./images/photo5.png" />
           </div>
           <div class={styles["history__btn-container"]}>
-            <button> {"<"} </button>
-            <button> {">"} </button>
+            <button>
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button>
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
           </div>
         </div>
+        </div>
       </Section>
-
     </>
   );
 });

@@ -1,0 +1,76 @@
+@import "src/styles/shared";
+
+.section {
+  padding-top: 81px;
+  padding-bottom: 81px;
+  background-color: #fdfdfd;
+}
+.header {
+  max-width: 570.216px;
+  margin: auto;
+  margin-bottom: 55px;
+}
+
+.title {
+  color: #19381f;
+  text-align: center;
+  font-family: ABeeZee;
+  @include r(fz, 37, 59);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.description {
+  color: #19381f;
+  text-align: center;
+  font-family: Poppins;
+  @include r(fz, 12, 15);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 185%;
+}
+
+.items-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  overflow-x: scroll;
+}
+
+.item {
+  color: #19381f;
+  @include r(w, 180, 211);
+  @include r(mh, 220, 350);
+
+  border-radius: 1000px;
+  padding: 12px;
+  border: 1px solid #19381f;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  padding-top: 50px;
+
+  &__title {
+    color: #19381f;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 17.796px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  &__description {
+    color: #19381f;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 13.347px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}

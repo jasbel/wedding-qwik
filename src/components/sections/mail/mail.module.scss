@@ -1,0 +1,114 @@
+@import "src/styles/shared";
+
+.section {
+  color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 101px;
+  padding-bottom: 101px;
+  background-color: #f7d8e9;
+}
+.box {
+  text-align: center;
+  color: var(--6, #b95c50);
+  @include r(w, 300, 396);
+  @include r(h, 400, 596);
+  @include mq(w, '100%', $sm);
+  @include mq(h, auto, $sm);
+  border-radius: 11.996px;
+  background: #faecea;
+  box-shadow: 0px 4.7px 6px 2.3px rgba(0, 0, 0, 0.25);
+  padding: 34px 20px 24px;
+}
+.title {
+  color: var(--9, #965a00);
+  text-align: center;
+  font-family: Dancing Script;
+  font-size: 28.791px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 96.5%; /* 27.783px */
+}
+.image {
+  width: 199.138px;
+  height: 79.175px;
+  text-align: center;
+  margin: auto;
+}
+.description {
+  color: var(--6, #b95c50);
+  font-family: Roboto;
+  font-size: 16.795px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.form {
+}
+
+.input {
+  &__wrap {
+    margin-bottom: 25px;
+
+    &--checkbox {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    &--button {
+      margin: 0 24px;
+    }
+  }
+  &__label {
+    color: var(--6, #b95c50);
+    font-family: Roboto;
+    font-size: 16.795px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: start;
+    width: 100%;
+    display: block;
+    margin-bottom: 8px;
+  }
+
+  &__wrap--checkbox &__label {
+    margin-bottom: 0;
+  }
+  &__value {
+    border-radius: 5.998px;
+    border: 1.2px solid var(--5, #de847b);
+    background: var(--white-base, #fff);
+
+    color: var(--2, #bb9096);
+    font-family: Roboto;
+    font-size: 15.595px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 38.388px; /* 246.154% */
+    letter-spacing: 0.528px;
+    width: 100%;
+
+    &--checkbox {
+      width: auto;
+      min-width: 25px;
+      min-height: 25px;
+      margin-right: 28px;
+    }
+  }
+
+  &__button {
+    border-radius: 5.998px;
+    border: 1.2px solid var(--5, #de847b);
+
+    border-radius: 35.989px;
+    border: 2.399px solid var(--6, #b95c50);
+    background: var(--6, #b95c50);
+    color: white;
+    width: 100%;
+    padding: 12px;
+    text-transform: uppercase;
+  }
+}
