@@ -1,7 +1,9 @@
-.wrap {
+@import "src/styles/shared";
+
+.section {
   background-color: #e4e6ff;
-  padding-top: 178px;
-  padding-bottom: 178px;
+  @include r(pt, 50, 178);
+  @include r(pb, 50, 178);
 }
 
 .container {
@@ -9,6 +11,9 @@
   gap: 7px;
   max-width: 1160px;
   margin: auto;
+  justify-content: center;
+
+  @include mq(flex-direction, column, $md);
 }
 
 .content {
@@ -16,6 +21,7 @@
   // display: flex;
   color: white;
   width: 50%;
+  @include mq(w, 100%, $md);
 
   &--right {
     padding: 16px 28px;
@@ -25,6 +31,8 @@
     background-color: transparent;
     // width: 50%;
   }
+
+  
 }
 
 .title {
@@ -67,6 +75,8 @@
         position: absolute;
         top: 0;
         z-index: 9;
+
+        @include mq(display, none, $md)
       }
     }
   }

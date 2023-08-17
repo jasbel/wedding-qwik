@@ -16,9 +16,9 @@ export default component$(() => {
             icon="rings.png"
             btnTitle="Abrir Mapa"
           />
-            <figure class={styles.photoContent}>
-              <img src="./images/photo-rectangle.png" />
-            </figure>
+          <figure class={styles.photoContent}>
+            <img src="./images/photo-rectangle.png" />
+          </figure>
           <ItemInvitation
             title="Recepcion"
             date="Lunes, Julio 30 2022"

@@ -56,19 +56,15 @@ const dataSchedule: ISchedule[] = [
 export default component$(() => {
   const data = useSignal(dataSchedule);
   return (
-    <>
-      <Section id="schedule" class={styles.section}>
-        <div class={styles.wrap}>
-          <div class={styles.container}>
-            <div class={[styles.content, styles["content--right"]]}>
-              <ScheduleMenu items={data.value} />
-            </div>
-            <div class={[styles.content, styles["content--left"]]}>
-              <ScheduleInfo item={data.value[0]} />
-            </div>
-          </div>
+    <Section id="schedule" class={styles.section}>
+      <div class={styles.container}>
+        <div class={[styles.content, styles["content--right"]]}>
+          <ScheduleMenu items={data.value} />
         </div>
-      </Section>
-    </>
+        <div class={[styles.content, styles["content--left"]]}>
+          <ScheduleInfo item={data.value[0]} />
+        </div>
+      </div>
+    </Section>
   );
 });

@@ -6,9 +6,8 @@ import { Points } from "~/components/icons/points";
 
 export default component$(() => {
   return (
-    <>
-      <Section id="history" >
-        <div class={styles.history}>
+    <Section id="history" class={styles.section}>
+      <div class={styles.history}>
         <div class={styles["history__floating"]}>
           <Points />
         </div>
@@ -38,8 +37,7 @@ export default component$(() => {
             </button>
           </div>
         </div>
-        </div>
-      </Section>
-    </>
+      </div>
+    </Section>
   );
 });
