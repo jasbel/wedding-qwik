@@ -43,8 +43,6 @@ export default component$(() => {
         </h1>
       </div>
 
-      <div role="presentation" class="ellipsis"></div>
-
       <div class="container container-center">
         {list.value.length === 0 ? (
           <span class={styles.empty}>No items found</span>

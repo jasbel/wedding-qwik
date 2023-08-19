@@ -6,6 +6,8 @@
  *
  */
 
+ @import "src/styles/shared";
+
 :root {
   --qwik-dark-blue: #006ce9;
   --qwik-light-blue: #18b6f6;
@@ -63,4 +65,23 @@ html {
 body {
   padding: 0;
   line-height: inherit;
+}
+
+
+section {
+  margin: 0;
+
+  @include mq(pl, 12, $sm);
+  @include mq(pr, 12, $sm);
+
+  @include r(pt, 50, 101);
+  @include r(pb, 50, 101);
+}
+
+figure {
+  margin: 0;
+}
+
+img {
+  width: 100%;
 }

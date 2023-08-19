@@ -1,10 +1,9 @@
 @import "src/styles/shared";
-
-.container {
-  padding-top: 330px;
-  @include r(pt, 260, 330);
-  padding-bottom: 80px;
+.section {
   background-color: #1a381f;
+  @include r(pt, 260, 330);
+  @include r(pb, 50, 80);
+  position: relative;
 }
 
 .title {
@@ -18,6 +17,7 @@
   text-align: center;
   @include r(mb, 50, 100);
 }
+
 .item {
   // border: 2px solid transparent;
   // background: linear-gradient(to bottom, #e1ed07 0%, #81856d 100%) 1;
@@ -25,7 +25,8 @@
 
   &__container {
     padding: 12px;
-    display: flex;overflow-x:scroll ;
+    display: flex;
+    overflow-x: scroll;
     @include r(mb, 24, 50);
   }
 
@@ -92,31 +93,27 @@
   }
 }
 
-.history {
-  position: relative;
+.floating {
+  position: absolute;
+  top: 6%;
+  right: 7%;
+  rotate: 160deg;
+  display: flex;
 
-  &__floating {
-    position: absolute;
-    top: 6%;
-    right: 7%;
-    rotate: 160deg;
-    display: flex;
-    
-    @include r(w, 200, 350);
-  }
+  @include r(w, 200, 350);
+}
 
-  &__btn-container {
-    display: flex;
-    justify-content: end;
-    padding-right: 10%;
-    gap: 13px;
+.btn-container {
+  display: flex;
+  justify-content: end;
+  padding-right: 10%;
+  gap: 13px;
 
-    button {
-      padding: 10px 37px;
-      background-color: transparent;
-      border: 1px solid white;
-      border-radius: 50px;
-      color: white;
-    }
+  button {
+    padding: 10px 37px;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 50px;
+    color: white;
   }
 }

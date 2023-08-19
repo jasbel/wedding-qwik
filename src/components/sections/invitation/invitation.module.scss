@@ -1,44 +1,23 @@
 @import "src/styles/shared";
 
 .section {
-  color: white;
-  font-size: 0.8rem;
-  line-height: 2;
-  margin: 0 0 40px;
-  margin-left: auto;
-  margin-right: auto;
-
-  h3 {
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 0 0 15px;
-    padding: 0;
-  }
-
-  li {
-    line-height: 2.5;
-  }
+  background-color: #ffcdb2;
+  @include r(pt, 50, 162);
+  @include r(pb, 50, 120);
 }
 
 .invitation {
   &__wrap {
     display: flex;
     justify-content: center;
-    background-color: #ffcdb2;
-    @include r(pt, 50, 162);
-    @include r(pb, 50, 120);
     @include r(gap, 12, 24);
-    
     @include mq(flex-direction, column, $md);
-
   }
 }
 
 .photoContent {
-  max-width: 430px;
-  max-height: 494px;
   @include r(maxw, 300, 430);
-    @include r(maxh, 320, 494);
+  @include r(maxh, 320, 494);
   align-self: center;
   position: relative;
 
@@ -57,7 +36,6 @@
     transform: translate(-38%, -50%);
   }
 }
-
 
 .item {
   border: 1px solid #bb9096;

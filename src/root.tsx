@@ -7,7 +7,7 @@ import {
 import { RouterHead } from "./components/router-head/router-head";
 
 import "@fortawesome/fontawesome-free/css/all.css"
-import "./global.css";
+import "./global.scss";
 
 export default component$(() => {
   /**

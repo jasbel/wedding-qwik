@@ -8,7 +8,7 @@ const data = [{ url }, { url }, { url }, { url }, { url }, { url }];
 
 export default component$(() => {
   return (
-    <Section id="photos" class={styles.section}>
+    <Section id="photos" class={styles.section} noWrap>
       <div class={styles.header}>
         <div />
         <h2 class={styles.title}>Fotos</h2>
