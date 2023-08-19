@@ -1,0 +1,187 @@
+@import "src/styles/shared";
+
+.section {
+  background-color: #e4e6ff;
+  @include r(pt, 50, 178);
+  @include r(pb, 50, 178);
+}
+
+.container {
+  display: flex;
+  gap: 7px;
+  max-width: 1160px;
+  margin: auto;
+  justify-content: center;
+
+  @include mq(flex-direction, column, $md);
+}
+
+.content {
+  padding-right: 0;
+  // display: flex;
+  color: white;
+  width: 50%;
+  @include mq(w, 100%, $md);
+
+  &--right {
+    padding: 16px 28px;
+    background-color: #19381f;
+  }
+  &--left {
+    background-color: transparent;
+    // width: 50%;
+  }
+
+  
+}
+
+.title {
+  color: #fff;
+  font-family: Domine;
+  font-size: 52.647px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 62px;
+}
+
+.itemContainer {
+  margin-bottom: 15px;
+  padding: 0;
+}
+
+.menu {
+  &__item {
+    border-bottom: 1px solid #f1f6ef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 11px;
+    padding-right: 16px;
+
+    &--active {
+      background-color: #f1f6ef;
+      border-bottom-color: #19381f;
+      color: black;
+      position: relative;
+
+      &::before {
+        $size: 50px;
+        content: "";
+        background-color: #f1f6ef;
+        width: $size;
+        right: -$size;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 9;
+
+        @include mq(display, none, $md)
+      }
+    }
+  }
+  &__item--active &__title {
+    font-weight: bold;
+  }
+
+  &__title {
+  }
+
+  &__timeContent {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+  }
+  &__time {
+  }
+  &__icon {
+    font-size: 24px;
+  }
+}
+
+.info {
+  outline: 2px solid black;
+  color: black;
+  display: flex;
+  flex: auto;
+  height: calc(100% - 4px);
+  position: relative;
+  top: 2px;
+  // box-sizing: border-box;
+
+  $height: 350px;
+  $width: 212px;
+
+  &__content {
+    padding: 28px 25px;
+    padding-right: 0;
+  }
+
+  &__title {
+    color: #19381f;
+    font-family: "ABeeZee";
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__description {
+    color: #19381f;
+    font-family: Poppins;
+    font-size: 13.347px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__btn {
+    border-radius: 25.211px;
+    background: #ffc700;
+    color: #19381f;
+    font-family: Poppins;
+    font-size: 16.313px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 10px 15px;
+    // margin-top: 24px;
+  }
+
+  &__photo-wrap {
+    padding: 26px 16px 16px 0;
+  }
+  &__photo-content {
+    height: $height;
+    width: $width;
+    border-radius: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      border-radius: 300px;
+      border: 1px solid black;
+      height: 100%;
+      width: 100%;
+      top: -12px;
+      left: 7px;
+      z-index: 0;
+    }
+  }
+
+  &__photo {
+    height: 100%;
+    width: 100%;
+    background-color: #d9d9d9;
+    z-index: 1;
+    border-radius: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+}

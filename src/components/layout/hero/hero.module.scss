@@ -36,8 +36,8 @@
     // background-color: red;
     width: 392px;
     height: 392px;
+    z-index: -1;
 
-    @include mq(z-index, "-1", $md);
   }
 }
 

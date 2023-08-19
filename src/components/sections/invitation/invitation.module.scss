@@ -35,6 +35,10 @@
     top: -6px;
     transform: translate(-38%, -50%);
   }
+  img {
+    @include mq(h, 0, $md);
+    @include mq(w, 70, $md);
+  }
 }
 
 .item {
