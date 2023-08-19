@@ -72,10 +72,9 @@ body {
 
 section {
   margin: 0;
-
-  @include mq(pl, 12, $sm);
-  @include mq(pr, 12, $sm);
-
+  overflow-x: hidden;
+  padding-left: 12px;
+  padding-right: 12px;
   @include r(pt, 50, 101);
   @include r(pb, 50, 101);
 }

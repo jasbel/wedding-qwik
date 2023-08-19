@@ -1,9 +1,9 @@
 @import "src/styles/shared";
 
 .section {
-  padding-top: 81px;
-  padding-bottom: 81px;
   background-color: #fdfdfd;
+  @include r(pt, 50, 81);
+  @include r(pb, 50, 81);
 }
 .header {
   max-width: 570.216px;

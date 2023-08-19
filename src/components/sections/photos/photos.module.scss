@@ -1,8 +1,8 @@
 @import "src/styles/shared";
 
 .section {
-  padding-top: 24px;
-  padding-bottom: 24px;
+  padding-top: 44px;
+  padding-bottom: 44px;
 }
 
 .header {
@@ -11,7 +11,6 @@
   align-items: center;
   margin-bottom: 24px;
 
-  
   @include r(pr, 12, 50);
   @include r(pl, 12, 50);
 }
@@ -36,7 +35,6 @@
   padding-bottom: 30px;
 
   @include r(pl, 24, 45);
-
 }
 
 .item {
@@ -60,7 +58,6 @@
     min-width: 40px;
     width: 100%;
     height: 100%;
-
   }
 }
 

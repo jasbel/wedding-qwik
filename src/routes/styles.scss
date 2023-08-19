@@ -1,13 +1,16 @@
 @import "src/styles/shared";
 
 /* THIS FILE IS JUST FOR EXAMPLES, DELETE IT IF YOU DON'T NEED IT */
-* {
-  box-sizing: border-box;
-}
 /* SHELL ---------------------------------------- */
 html {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
     "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -77,36 +80,42 @@ ul {
 /* CONTAINER ------------------------------------ */
 .container {
   margin: 0 auto;
-  @include padding-responsive(30, 24, 40, 12);
-}
-.container.container-purple {
-  background: var(--qwik-light-purple);
-}
-.container.container-dark {
-  background: var(--qwik-dark-background);
-  color: var(--qwik-dark-text);
-}
-.container.container-center {
-  text-align: center;
-}
-.container.container-flex {
-  /* does nothing on mobile */
-}
-.container.container-spacing-xl {
-  padding: 50px 40px;
-}
+  max-width: 1160px;
+  // @include padding-responsive(30, 24, 40, 12);
+  // @include r(maxw, 330, 1160);
+  @include mq(maxw, 1140, $xxl);
+  @include mq(maxw, 960, $xl);
+  @include mq(maxw, 720, $lg);
+  @include mq(maxw, 550, $md);
+  @include mq(maxw, 350, $sm);
+  // @include mq(maxw, , $xs);
+  background-color: red;
 
-@media screen and (min-width: 768px) {
-  .container {
+  &.container-purple {
+    background: var(--qwik-light-purple);
+  }
+  &.container-dark {
+    background: var(--qwik-dark-background);
+    color: var(--qwik-dark-text);
+  }
+  &.container-center {
+    text-align: center;
+  }
+
+  &.container-spacing-xl {
+    padding: 50px 40px;
+  }
+
+  @media screen and (min-width: 768px) {
     padding: 50px 80px;
-  }
-  .container.container-spacing-xl {
-    padding: 100px 60px;
-  }
-  .container.container-flex {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+    &.container-spacing-xl {
+      padding: 100px 60px;
+    }
+    &.container-flex {
+      display: flex;
+      justify-content: center;
+      gap: 60px;
+    }
   }
 }
 
