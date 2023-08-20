@@ -9,7 +9,9 @@ html {
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
 
@@ -81,15 +83,14 @@ ul {
 .container {
   margin: 0 auto;
   max-width: 1160px;
-  // @include padding-responsive(30, 24, 40, 12);
-  // @include r(maxw, 330, 1160);
+  width: 100%;
   @include mq(maxw, 1140, $xxl);
   @include mq(maxw, 960, $xl);
   @include mq(maxw, 720, $lg);
   @include mq(maxw, 550, $md);
   @include mq(maxw, 350, $sm);
-  // @include mq(maxw, , $xs);
-  background-color: red;
+  @include mq(maxw, 340, $xs);
+  // background-color: red;
 
   &.container-purple {
     background: var(--qwik-light-purple);
@@ -107,7 +108,6 @@ ul {
   }
 
   @media screen and (min-width: 768px) {
-    padding: 50px 80px;
     &.container-spacing-xl {
       padding: 100px 60px;
     }

@@ -295,6 +295,10 @@
     } @else {
       $size-px: $value + px;
     }
+
+    @if ($attr== "order") {
+      $size-px: #{$value};
+    }
   }
 
   $screen-px: $screen + px;

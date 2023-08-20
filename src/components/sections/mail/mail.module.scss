@@ -11,6 +11,7 @@
 .box {
   text-align: center;
   color: var(--6, #b95c50);
+  margin: auto;
   @include r(w, 300, 396);
   @include mq(w, '100%', $sm);
   border-radius: 11.996px;

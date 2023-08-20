@@ -6,7 +6,6 @@
   flex-direction: column;
   flex-wrap: nowrap;
   align-items: center;
-  // height: 450px;
   justify-content: center;
   gap: 40px;
 
@@ -37,13 +36,12 @@
     width: 392px;
     height: 392px;
     z-index: -1;
-
   }
 }
 
 .box {
   // position: absolute;
-  @include padding-responsive(30, 24, 60, 20);
+  @include padding-responsive(30, 18, 60, 12);
   @include r("br", 12, 30);
   display: flex;
   flex-direction: column;
@@ -56,7 +54,7 @@
     font-family: "Montaga";
     font-style: normal;
     font-weight: 400;
-    font-size: 23.7281px;
+    @include r(fz, 18, 24);
     line-height: 100%;
     text-align: center;
     color: #2b1105;
@@ -71,7 +69,7 @@
     line-height: 100%;
 
     color: #c6754d;
-    @include r(fz, 47, 75);
+    @include r(fz, 40, 75);
   }
 
   &__btn {
@@ -92,10 +90,10 @@
 }
 
 .item {
-  // position: absolute;
   &--left,
   &--right {
     margin-top: -30px;
+    position: absolute;
 
     @include mq("display", none, $md);
   }
@@ -117,7 +115,7 @@
   &__container {
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
 
     @include r(h, 235, 300);
@@ -149,8 +147,6 @@
   }
 
   &__content {
-    width: 366px;
-    height: 585px;
     background-color: antiquewhite;
     border-radius: 300px;
     background-size: cover;

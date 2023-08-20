@@ -22,11 +22,14 @@ export default component$(() => {
         </div>
       </div>
 
-      <div class={styles["item-container"]}>
-        {data.map((d, i) => (
+      <div class={styles["item-wrapper"]}>
+        <div class={styles["item-container"]}>
+          {data.map((d, i) => (
             <ItemPhoto key={i} url={d.url} />
-        ))}
+          ))}
+        </div>
       </div>
+
       <div class={styles.progress__wrap}>
         <div class={styles.progress}>
           <div class={styles.progress__item}></div>

@@ -108,13 +108,15 @@
   position: relative;
   top: 2px;
   // box-sizing: border-box;
-
-  $height: 350px;
-  $width: 212px;
+  @include mq(flex-direction, column, $md);
 
   &__content {
     padding: 28px 25px;
     padding-right: 0;
+    @include mq(order, 2, $md);
+    @include mq(p, 12, $md);
+    @include mq(mb, 24, $md);
+
   }
 
   &__title {
@@ -145,20 +147,28 @@
     font-weight: 400;
     line-height: normal;
     padding: 10px 15px;
+    @include mq(w, 100%, $md);
     // margin-top: 24px;
   }
 
   &__photo-wrap {
     padding: 26px 16px 16px 0;
+    text-align: center;
+    @include mq(order, '1', $md);
+    @include mq(p, 12, $md);
+    @include mq(mt, 12, $md);
+
   }
   &__photo-content {
-    height: $height;
-    width: $width;
     border-radius: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
+    @include r(w, 150, 212);
+    @include r(h, 250, 350);
+    @include mq(m, auto, $md);
+
 
     &::before {
       content: "";

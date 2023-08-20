@@ -7,7 +7,7 @@ interface IItemPhotoProps {
 
 export default component$(({ url: url = "" }: IItemPhotoProps) => {
   return (
-    <div class={[styles.item__wrap]}>
+    <div class={styles.item__wrap}>
       <div class={styles.item}>
         <figure class={styles.item__figure}>
 

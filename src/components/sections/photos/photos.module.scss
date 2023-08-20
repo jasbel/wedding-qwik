@@ -28,19 +28,29 @@
   }
 }
 
+.item-wrapper {
+  overflow-x: hidden;
+  // width: 920px;
+}
 .item-container {
-  display: flex;
+  display: inline-flex;
   gap: 31px;
   overflow-x: scroll;
   padding-bottom: 30px;
 
+  @include r(width, 340, 1200);
   @include r(pl, 24, 45);
 }
 
 .item {
+  // display: inline-flex;
   width: 211px;
   min-height: 350px;
   padding: 0px;
+
+  &__wrap {
+    display: inline-block;
+  }
 
   &__figure {
     height: 100%;
