@@ -1,1 +1,1 @@
-export * from "./Photo";
+export * from "./icon-up";
