@@ -1,7 +1,7 @@
 @import "src/styles/shared";
 .section {
   background-color: #1a381f;
-  @include r(pt, 260, 330);
+  @include r(pt, 210, 330);
   @include r(pb, 50, 80);
   position: relative;
 }

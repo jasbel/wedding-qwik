@@ -11,7 +11,7 @@ export default component$(() => {
           <p class={styles.box__description}>Celebrando nuestro dia mas especial</p>
           <h2 class={styles.box__title}>Asbel & Loida</h2>
 
-          <p class={styles.box__description}>Julio 20, 2023 - Bolivia, Cbba.</p>
+          <p class={styles.box__description}>Enero 05, 2024 - Bolivia, Cbba.</p>
 
           <button class={styles.box__btn} onClick$={() => console.log("Guardar a calendario")}>
             Guardar a calendario

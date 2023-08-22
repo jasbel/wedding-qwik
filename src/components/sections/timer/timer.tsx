@@ -5,8 +5,6 @@ import Counter from "./counter";
 
 export default component$(() => {
   return (
-    <>
-  
       <Section id="timer" class={styles.section}>
         <div class={styles.box}>
         <div class={styles['box-content']}>
@@ -21,6 +19,5 @@ export default component$(() => {
         </div>
         </div>
       </Section>
-    </>
   );
 });
