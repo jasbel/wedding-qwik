@@ -1,6 +1,6 @@
 /* eslint-disable qwik/jsx-img */
 import { component$, useSignal } from "@builder.io/qwik";
-import Section from "~/components/layout/section/section";
+import Section from "../../layout/section/section";
 import styles from "./schedule.module.scss";
 import ScheduleInfo from "./schedule-info";
 import ScheduleMenu from "./schedule-menu";
