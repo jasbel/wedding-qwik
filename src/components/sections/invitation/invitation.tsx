@@ -1,7 +1,7 @@
 import { component$ } from "@builder.io/qwik";
 import styles from "./invitation.module.scss";
 import ItemInvitation from "./item-invitation";
-import Section from "~/components/layout/section/section";
+import Section from "../../layout/section/section";
 
 export default component$(() => {
   return (

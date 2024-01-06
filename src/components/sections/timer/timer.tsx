@@ -1,6 +1,6 @@
 import {  component$ } from "@builder.io/qwik";
 import styles from "./timer.module.scss";
-import Section from "~/components/layout/section/section";
+import Section from "../../layout/section/section";
 import Counter from "./counter";
 
 export default component$(() => {

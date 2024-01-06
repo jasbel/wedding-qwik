@@ -1,5 +1,5 @@
 import { component$ } from "@builder.io/qwik";
-import Section from "~/components/layout/section/section";
+import Section from "../../layout/section/section";
 
 import styles from "./mail.module.scss";
 import InputMail from "./input-mail";

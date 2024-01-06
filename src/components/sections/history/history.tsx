@@ -1,8 +1,8 @@
 import { component$ } from "@builder.io/qwik";
-import Section from "~/components/layout/section/section";
+import Section from "../../layout/section/section";
 import ItemHistory from "./item-history";
 import styles from "./history.module.scss";
-import { Points } from "~/components/icons/points";
+import { Points } from "../../icons/points";
 
 export default component$(() => {
   return (
