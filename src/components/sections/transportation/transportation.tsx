@@ -10,28 +10,24 @@ export default component$(() => {
       <div class={styles.header}>
         <h2 class={styles.title}>
           {/* <Slot name="title" /> */}
-          transportation
+          Transporte
         </h2>
         <p class={styles.description}>
-          The Dead Sea is a salt lake bordered by Jordan to the east and Palestine to the west. The lake’s surface is 430.5 metres below sea level, making it the LOWEST point on
-          Earth!
+        Dejamos a tu disposición numerosas líneas de transporte que te acercan directamente al lugar del evento, proporcionándote así información detallada para tu conveniencia.
         </p>
       </div>
       <div class={styles["items-container"]}>
-        <ItemTransportation icon="taxi" title="Taxi" description={["Uber is always an easy option."]} />
+        
         <ItemTransportation
           icon="microbus"
-          title="microbus"
+          title="Lineas"
           description={[
-            "      You can find them outside       Building No. (1)       at the arrivals hall.      ",
-            "The fees to the Dead Sea is around  40 Jordanian Dinars  (55 USD)",
+            "Lineas que dejan a unos metros",
+            "108, 138, T, 136, R, 148",
+            "otras lineas: 42, 121",
           ]}
         />
-        <ItemTransportation
-          icon="microtaxi"
-          title="microtaxi"
-          description={["You can always contact your hotel for transportation. However, we recommend to book this service ahead of time."]}
-        />
+        <ItemTransportation icon="taxi" title="Radio Movil" description={["Existen algunas que tienen su central en nuestra zona", "Remix, Oruro"]} />
       </div>
     </Section>
   );

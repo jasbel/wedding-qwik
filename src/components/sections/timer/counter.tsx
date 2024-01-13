@@ -1,4 +1,4 @@
-import { component$, useSignal } from "@builder.io/qwik";
+import { component$, useSignal, useTask$ } from "@builder.io/qwik";
 import styles from "./timer.module.scss";
 
 export default component$(() => {
@@ -27,15 +27,41 @@ export default component$(() => {
   // // Actualiza el temporizador al cargar la página
   // window.onload = updateTimer;
 
+  const calculateTimeLeft = () => {
+    const difference = new Date('2027-01-27T23:59:59') - new Date();
+    let timeLeft = {};
+
+    if (difference > 0) {
+      timeLeft = {
+        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+        hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+        minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+      };
+    }
+
+    return timeLeft;
+  };
+
+  const timeLeft = useSignal(calculateTimeLeft);
+
+  useTask$(async () => {
+    const timer = setTimeout(() => {
+      timeLeft.value = calculateTimeLeft();
+    }, 1000);
+
+    return () => clearTimeout(timer);
+  });
+
+
   return (
     <>
       <div class={styles.counter__wrap}>
         <div class={styles.counter}>
-          <h3 class={styles.counter__value}>147</h3>
+          <h3 class={styles.counter__value}>14</h3>
           <p class={styles.counter__label}>Dias</p>
         </div>
         <div class={styles.counter}>
-          <h3 class={styles.counter__value}>22</h3>
+          <h3 class={styles.counter__value}>12</h3>
           <p class={styles.counter__label}>Horas</p>
         </div>
         <div class={styles.counter}>

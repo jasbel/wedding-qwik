@@ -9,25 +9,25 @@ export default component$(() => {
         <ul class={styles.content}>
           <li class={styles.item}>
           <a href="#" >
-              Bienvenido
+              {/* Bienvenido */}
             </a>
           </li>
           <li class={styles.item}>
             <a href="#history" >
-              history
+              {/* history */}
             </a>
           </li>
           <li class={styles.item}>
             <a href="#invitation" >
-              invitation
+              {/* invitation */}
             </a>
           </li>
           <li class={styles.item}>
             <a href="#schedule" >
-              schedule
+              {/* schedule */}
             </a>
           </li>
-          <li class={styles.item}>
+          <li class={[styles.item, styles.logo]}>
             <div class={styles.logo}>
               <a href="/" title="logo">
                 <WeddingLogo height={136} width={125} />
@@ -36,22 +36,22 @@ export default component$(() => {
           </li>
           <li class={styles.item}>
             <a href="#transportation" >
-              transportation
+              {/* transportation */}
             </a>
           </li>
           <li class={styles.item}>
             <a href="#mail" >
-              mail
+              {/* mail */}
             </a>
           </li>
           <li class={styles.item}>
             <a href="#photos" >
-              photos
+              {/* photos */}
             </a>
           </li>
           <li class={styles.item}>
             <a href="#timer" >
-              timer
+              {/* timer */}
             </a>
           </li>
         </ul>

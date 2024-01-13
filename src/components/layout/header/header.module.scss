@@ -1,6 +1,7 @@
 @import "src/styles/shared";
 
 .header {
+  padding: 1rem 1rem;
   li {
     display: inline-block;
     margin: 0;
@@ -8,7 +9,14 @@
     font-size: 0.7rem;
     text-transform: capitalize;
 
-    @include mq(display, none, $md);
+    &.logo {
+      @include mq(margin-top, 1.5rem, $md);
+      @include mq(margin-bottom, 1.5rem, $md);
+      
+    }
+    &:not(.logo) {
+      @include mq(display, none, $md);
+    }
 
     a {
       color: black;

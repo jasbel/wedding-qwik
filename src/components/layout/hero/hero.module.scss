@@ -30,9 +30,9 @@
     position: absolute;
     background-image: url(/images/hero-circle.png);
     background-size: cover;
+    background-repeat: no-repeat;
     top: -20px;
     right: 50px;
-    // background-color: red;
     width: 392px;
     height: 392px;
     z-index: -1;
@@ -95,18 +95,18 @@
     margin-top: -30px;
     position: absolute;
 
-    @include mq("display", none, $md);
+    // @include mq("display", none, $md);
   }
   &--left {
-    bottom: 24px;
-    @include r(l, -70, 120);
+    @include r(b, -50, 24);
+    @include r(l, 15, 120);
   }
   &--center {
     z-index: 10;
   }
   &--right {
-    bottom: 24px;
-    @include r(r, -70, 120);
+    @include r(b, -50, 24);
+    @include r(r, 15, 120);
   }
 
   &__container {
@@ -115,7 +115,7 @@
     justify-content: center;
     align-items: flex-start;
 
-    @include r(h, 175, 300);
+    @include r(h, 75, 300);
     @include mq("justify-content", center, $md);
   }
 }
@@ -163,8 +163,8 @@
     &--small {
       width: 200px;
       height: 318px;
-      @include r(w, 125, 200);
-      @include r(h, 220, 318);
+      @include r(w, 80, 200);
+      @include r(h, 125, 318);
     }
   }
 }

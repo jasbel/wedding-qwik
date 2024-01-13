@@ -8,18 +8,20 @@ import Schedule from "./sections/schedule/schedule";
 import Timer from "./sections/timer/timer";
 import Transportation from "./sections/transportation/transportation";
 import Hero from "./layout/hero/hero";
+import Header from "./layout/header/header";
 
 export const QwikIO = component$(() => {
   const counter = useSignal(0);
 
   return <>
+      <Header />
       <Hero />
-      <History />
+      {/* <History /> */}
       <Invitation />
-      <Schedule />
+      {/* <Schedule /> */}
       <Transportation />
-      <Mail />
-      <Photos />
+      {/* <Mail /> */}
+      {/* <Photos /> */}
       <Timer />
   </>
 });

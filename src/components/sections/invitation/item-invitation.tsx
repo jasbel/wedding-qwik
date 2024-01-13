@@ -9,13 +9,14 @@ interface IItemInvitationProps {
   direction?: string;
   icon?: string;
   btnTitle?: string;
+  btnUrl?: string;
   position?: "bottom";
 }
 
 export default component$(
-  ({ title = "", btnTitle = "", icon = "", date = "", hour = "", direction = "", position }: IItemInvitationProps) => {
+  ({ title = "", btnUrl ="", btnTitle = "", icon = "", date = "", hour = "", direction = "", position }: IItemInvitationProps) => {
     return (
-      <div class={[styles.item__wrap, position==="bottom" ? styles["item__wrap--bottom"] : undefined]} style={`background-image: url(images/flower-main.pnsg)`}>
+      <div class={[styles.item__wrap, position==="bottom" ? styles["item__wrap--bottom"] : undefined]} style={`background-image: url(images/flower-main.png)`}>
         <div class={styles.item}>
           <div style={{marginBottom: '6px'}}>
             <img src={"./images/"+icon} />
@@ -41,7 +42,7 @@ export default component$(
               <span>{direction}</span>
             </p>
           </div>
-          <button class={styles.item__btn} title="btnTitle">
+          <button onClick$={() => window.open(btnUrl, '_blank')} class={styles.item__btn} title="btnTitle">
             {btnTitle}
           </button>
         </div>
