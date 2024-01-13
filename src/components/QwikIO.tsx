@@ -11,7 +11,6 @@ import Hero from "./layout/hero/hero";
 import Header from "./layout/header/header";
 
 export const QwikIO = component$(() => {
-  const counter = useSignal(0);
 
   return <>
       <Header />

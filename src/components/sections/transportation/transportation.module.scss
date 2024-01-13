@@ -37,12 +37,16 @@
   gap: 25px;
   justify-content: center;
   overflow-x: scroll;
+
+  @include mq(flex-direction, column, $sm)
 }
 
 .item {
   color: #19381f;
   @include r(w, 180, 211);
   @include r(mh, 220, 350);
+  @include mq(w, 100%, $sm);
+  @include mq(mh, auto, $sm);
 
   border-radius: 1000px;
   padding: 12px;
@@ -53,6 +57,8 @@
   align-items: center;
   // justify-content: center;
   padding-top: 50px;
+  @include mq(pt, 12px, $sm);
+
 
   &__title {
     color: #19381f;
