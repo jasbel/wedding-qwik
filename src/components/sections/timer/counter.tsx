@@ -27,30 +27,30 @@ export default component$(() => {
   // // Actualiza el temporizador al cargar la página
   // window.onload = updateTimer;
 
-  const calculateTimeLeft = () => {
-    const difference = new Date('2027-01-27T23:59:59') - new Date();
-    let timeLeft = {};
+  // const calculateTimeLeft = () => {
+  //   const difference = new Date('2027-01-27T23:59:59') - new Date();
+  //   let timeLeft = {};
 
-    if (difference > 0) {
-      timeLeft = {
-        days: Math.floor(difference / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-        minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
-      };
-    }
+  //   if (difference > 0) {
+  //     timeLeft = {
+  //       days: Math.floor(difference / (1000 * 60 * 60 * 24)),
+  //       hours: Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+  //       minutes: Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)),
+  //     };
+  //   }
 
-    return timeLeft;
-  };
+  //   return timeLeft;
+  // };
 
-  const timeLeft = useSignal(calculateTimeLeft);
+  // const timeLeft = useSignal(calculateTimeLeft);
 
-  useTask$(async () => {
-    const timer = setTimeout(() => {
-      timeLeft.value = calculateTimeLeft();
-    }, 1000);
+  // useTask$(async () => {
+  //   const timer = setTimeout(() => {
+  //     timeLeft.value = calculateTimeLeft();
+  //   }, 1000);
 
-    return () => clearTimeout(timer);
-  });
+  //   return () => clearTimeout(timer);
+  // });
 
 
   return (
