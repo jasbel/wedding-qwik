@@ -8,6 +8,7 @@ export default defineConfig({
   integrations: [qwikdev()],
   output: "server",
   adapter: vercel({
+    imageService: true,
     edgeMiddleware: true,
   }),
 });
