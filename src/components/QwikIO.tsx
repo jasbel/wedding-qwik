@@ -2,9 +2,10 @@ import { component$, useSignal } from "@builder.io/qwik";
 
 import History from "./sections/history/history";
 import Invitation from "./sections/invitation/invitation";
-import Mail from "./sections/mail/mail";
-import Photos from "./sections/photos/photos";
-import Schedule from "./sections/schedule/schedule";
+// import Music from "./Music.astro";
+// import Mail from "./sections/mail/mail";
+// import Photos from "./sections/photos/photos";
+// import Schedule from "./sections/schedule/schedule";
 import Timer from "./sections/timer/timer";
 import Transportation from "./sections/transportation/transportation";
 import Hero from "./layout/hero/hero";

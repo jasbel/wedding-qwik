@@ -16,8 +16,8 @@ interface IItemInvitationProps {
 export default component$(
   ({ title = "", btnUrl ="", btnTitle = "", icon = "", date = "", hour = "", direction = "", position }: IItemInvitationProps) => {
     return (
-      <div class={[styles.item__wrap, position==="bottom" ? styles["item__wrap--bottom"] : undefined]} style={`background-image: url(images/flower-main.png)`}>
-        <div class={styles.item}>
+      <div class={[styles.item__wrap, position==="bottom" ? styles["item__wrap--bottom"] : undefined, 'animate__animated animate__bounce']} style={`background-image: url(images/flower-main.png)`}>
+        <div class={[styles.item]}>
           <div style={{marginBottom: '6px'}}>
             <img src={"./images/"+icon} />
           </div>

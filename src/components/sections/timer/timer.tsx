@@ -13,10 +13,8 @@ export default component$(() => {
       <Section id="timer" class={styles.section}>
         <div class={styles.box}>
         <div class={styles['box-content']}>
-          <h3 class={styles.title}>Contador Regresivo</h3>
-          <p class={styles.description}>
-            Cuantos dias, horas, minutos falta para el dia esperado
-          </p>
+          <h3 class={styles.title}>Cuanto falta para la boda</h3>
+          
           <Counter />
           <button class={styles.button} onClick$={openCalendar}>Agregar a Calendario</button>
         </div>
