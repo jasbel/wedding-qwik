@@ -6,9 +6,9 @@ import vercel from "@astrojs/vercel/serverless";
 // https://astro.build/config
 export default defineConfig({
   integrations: [qwikdev()],
-  output: "server",
+  output: "server",/*
   adapter: vercel({
     imageService: true,
     edgeMiddleware: true,
-  }),
+  }),*/
 });
