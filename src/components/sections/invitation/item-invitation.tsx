@@ -42,6 +42,10 @@ export default component$(
               <span>{direction}</span>
             </p>
           </div>
+          <a href={btnUrl} target="_blank" class={styles.item__btn} title={btnTitle}>
+
+            {btnTitle}
+          </a>
           <button onClick$={() => window.open(btnUrl, '_blank')} class={styles.item__btn} title="btnTitle">
             {btnTitle}
           </button>
