@@ -1,72 +1,32 @@
 ---
 interface Props {
-  title?: string;
+	title?: string;
 }
+
+const { title } = Astro.props;
 ---
 
 <button id="playButton">
-  <img id="playImg" src="./icons/play.svg" alt="Play">
+	<img id="playImg" src="./icons/play.svg" alt="Play">
 </button>
 
-<!-- <audio id="audioPlayer" src="./audio/music.mpeg"></audio> -->
-
-<!-- <script> -->
-  // document.addEventListener('DOMContentLoaded', () => {
-  //   const audioPlayer = document.getElementById('audioPlayer') as HTMLAudioElement | null;
-  //   const playButton = document.getElementById('playButton')!;
-  //   const playImg = document.getElementById('playImg') as HTMLImageElement;
-
-  //   if (!audioPlayer) {
-  //     console.error('Elemento de audio no encontrado');
-  //     return;
-  //   }
-
-  //   function activeMusic() {
-  //     playAudio();
-  //   }
-
-  //   async function playAudio() {
-  //     try {
-  //       await audioPlayer?.play();
-  //       playImg.src = "./icons/pause.svg";
-  //     } catch (error) {
-  //       console.warn('Error reproduciendo audio:', error);
-  //     }
-  //   }
-
-  //   function pauseMusic() {
-  //     audioPlayer?.pause();
-  //     playImg.src = "./icons/play.svg";
-  //   }
-
-  //   playButton.addEventListener('click', () => {
-  //     if (audioPlayer.paused) {
-  //       activeMusic();
-  //     } else {
-  //       pauseMusic();
-  //     }
-  //   });
-
-  //   setTimeout(() => {
-  //     activeMusic();
-  //   }, 2000);
-  // });
-  //
-// </script>
+<audio id="audioPlayer" src="./audio/music.mpeg"></audio>
 
 <style>
-  #playButton {
-    background-color: #e6e7f3;
-    width: 35px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    z-index: 10;
-    padding: 10px;
-    bottom: 15px;
-    right: 15px;
-    border-radius: 50px;
-  }
+	#playButton {
+		color: rgb(53, 39, 132);
+		background-color: #e6e7f3;
+		width: 35px;
+		height: 35px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		z-index: 10;
+		padding: 10px;
+		bottom: 15px;
+		right: 15px;
+		border-radius: 50px;
+		/* visibility:  ; */
+	}
 </style>

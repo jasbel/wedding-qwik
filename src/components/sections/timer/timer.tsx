@@ -16,7 +16,7 @@ export default component$(() => {
         <div class={styles['box-content']}>
           <h3 class={styles.title}>Cuanto falta para la boda</h3>
           
-          <Counter client:load />
+          <Counter  />
           {/* <button class={styles.button} onClick$={openCalendar}>Agregar a Calendario</button> */}
           <a class={styles.button} target="_blank" href={url} >Agregar a Calendario</a>
         </div>
