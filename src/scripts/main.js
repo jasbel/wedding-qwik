@@ -11,7 +11,7 @@
     
       async function playAudio() {
       try {
-        await audioPlayer.play();
+        await audioPlayer?.play();
         playImg.src = "./icons/pause.svg";
       } catch (error) {
         console.warn('Error playing audio:', error);
@@ -19,7 +19,7 @@
     }
     
       function pauseMusic() {
-        audioPlayer.pause();
+        audioPlayer?.pause();
         // playButton.textContent = 'Pausar';
         playImg.src = "./icons/play.svg";
       }
