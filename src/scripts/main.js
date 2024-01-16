@@ -1,6 +1,6 @@
 (() => {
-  typeof window !== 'undefined' &&
-    document.addEventListener('DOMContentLoaded', () => {
+  // typeof window !== 'undefined' &&
+  //   document.addEventListener('DOMContentLoaded', () => {
       console.log('workingg')
       /* const audioPlayer = document.getElementById('audioPlayer');
       const playButton = document.getElementById('playButton');
@@ -38,5 +38,5 @@
       setTimeout(() => {
         activeMusic()
       }, 2000); */
-    });
+    // });
 })();
