@@ -17,9 +17,7 @@ export default component$(() => {
 
           <p class={styles.box__description}>Enero 27, 2024 - Bolivia, Cbba.</p>
 
-          <button class={styles.box__btn} onClick$={$(() => window.open(url, '_blank'))}>
-            Guardar a calendario
-          </button>
+          <a class={styles.box__btn}  href={url} target="_blank" rel="noopener noreferrer">Guardar a calendario</a>
           {/* <a href="https://qwik.builder.io/docs" target="_blank" class="button button-dark">
           Explore the docs
         </a> */}

@@ -76,7 +76,7 @@
   &__btn {
     font-family: "Acme";
     font-style: normal;
-    font-size: 23.7281px;
+    font-size: 1.5rem;
     line-height: 30px;
     background-color: transparent;
     /* identical to box height */
@@ -95,8 +95,6 @@
   &--right {
     margin-top: -30px;
     position: absolute;
-
-    // @include mq("display", none, $md);
   }
   &--left {
     @include r(b, -50, 24);

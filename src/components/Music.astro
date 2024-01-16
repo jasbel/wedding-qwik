@@ -13,9 +13,10 @@ const { title } = Astro.props;
 <audio id="audioPlayer" src="./audio/music.mpeg"></audio>
 
 <script>
-document.addEventListener('DOMContentLoaded', () => {
+	document.addEventListener('DOMContentLoaded', () => {
+	// document.getElementById('playButton')?.addEventListener('DOMContentLoaded', function() {
   const audioPlayer = document.getElementById('audioPlayer') as HTMLAudioElement;
-  const playButton = document.getElementById('playButton')!;
+  const playButton = document.getElementById('playButton');
   const playImg = document.getElementById('playImg') as HTMLImageElement;
 
 	function activeMusic() {
@@ -39,7 +40,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
-  playButton.addEventListener('click', () => {
+  playButton?.addEventListener('click', () => {
     if (audioPlayer.paused) {
       activeMusic()
     } else {
@@ -51,6 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
 	setTimeout(() => {
 		activeMusic()
 	}, 2000);
+	// })
 });
 </script>
 
