@@ -8,50 +8,51 @@ interface Props {
   <img id="playImg" src="./icons/play.svg" alt="Play">
 </button>
 
-<audio id="audioPlayer" src="./audio/music.mpeg"></audio>
+<!-- <audio id="audioPlayer" src="./audio/music.mpeg"></audio> -->
 
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const audioPlayer = document.getElementById('audioPlayer') as HTMLAudioElement | null;
-    const playButton = document.getElementById('playButton')!;
-    const playImg = document.getElementById('playImg') as HTMLImageElement;
+<!-- <script> -->
+  // document.addEventListener('DOMContentLoaded', () => {
+  //   const audioPlayer = document.getElementById('audioPlayer') as HTMLAudioElement | null;
+  //   const playButton = document.getElementById('playButton')!;
+  //   const playImg = document.getElementById('playImg') as HTMLImageElement;
 
-    if (!audioPlayer) {
-      console.error('Elemento de audio no encontrado');
-      return;
-    }
+  //   if (!audioPlayer) {
+  //     console.error('Elemento de audio no encontrado');
+  //     return;
+  //   }
 
-    function activeMusic() {
-      playAudio();
-    }
+  //   function activeMusic() {
+  //     playAudio();
+  //   }
 
-    async function playAudio() {
-      try {
-        await audioPlayer?.play();
-        playImg.src = "./icons/pause.svg";
-      } catch (error) {
-        console.warn('Error reproduciendo audio:', error);
-      }
-    }
+  //   async function playAudio() {
+  //     try {
+  //       await audioPlayer?.play();
+  //       playImg.src = "./icons/pause.svg";
+  //     } catch (error) {
+  //       console.warn('Error reproduciendo audio:', error);
+  //     }
+  //   }
 
-    function pauseMusic() {
-      audioPlayer?.pause();
-      playImg.src = "./icons/play.svg";
-    }
+  //   function pauseMusic() {
+  //     audioPlayer?.pause();
+  //     playImg.src = "./icons/play.svg";
+  //   }
 
-    playButton.addEventListener('click', () => {
-      if (audioPlayer.paused) {
-        activeMusic();
-      } else {
-        pauseMusic();
-      }
-    });
+  //   playButton.addEventListener('click', () => {
+  //     if (audioPlayer.paused) {
+  //       activeMusic();
+  //     } else {
+  //       pauseMusic();
+  //     }
+  //   });
 
-    setTimeout(() => {
-      activeMusic();
-    }, 2000);
-  });
-</script>
+  //   setTimeout(() => {
+  //     activeMusic();
+  //   }, 2000);
+  // });
+  //
+// </script>
 
 <style>
   #playButton {

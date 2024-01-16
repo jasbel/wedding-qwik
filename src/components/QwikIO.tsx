@@ -22,6 +22,6 @@ export const QwikIO = component$(() => {
       <Transportation />
       {/* <Mail /> */}
       {/* <Photos /> */}
-      <Timer />
+      <Timer client:load />
   </>
 });
