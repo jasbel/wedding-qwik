@@ -1,7 +1,8 @@
 (() => {
   typeof window !== 'undefined' &&
     document.addEventListener('DOMContentLoaded', () => {
-      const audioPlayer = document.getElementById('audioPlayer');
+      console.log('workingg')
+      /* const audioPlayer = document.getElementById('audioPlayer');
       const playButton = document.getElementById('playButton');
       const playImg = document.getElementById('playImg');
     
@@ -20,7 +21,6 @@
     
       function pauseMusic() {
         audioPlayer?.pause();
-        // playButton.textContent = 'Pausar';
         playImg.src = "./icons/play.svg";
       }
     
@@ -37,6 +37,6 @@
     
       setTimeout(() => {
         activeMusic()
-      }, 2000);
+      }, 2000); */
     });
 })();
