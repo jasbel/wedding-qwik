@@ -1,0 +1,31 @@
+---
+interface Props {
+	title?: string;
+}
+
+const { title } = Astro.props;
+---
+
+<a id="whatsapp" href="https://api.whatsapp.com/send?phone=59168499480&text=Gracias%20por%20la%20invitación,%20estaré%20participando%20y%20celebrando%20su%20boda%20con%20ustedes%20💍💒">
+	<img src="./icons/whatsapp.svg" alt="Play">
+</a>
+
+<!-- <audio id="audioPlayer" src="./audio/music.mpeg"></audio> -->
+
+<style>
+	#whatsapp {
+		/* color: rgb(53, 39, 132); */
+		background-color: #fafffb;
+		width: 37px;
+		height: 37px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: fixed;
+		z-index: 10;
+		padding: 7px;
+		bottom: 15px;
+		left: 15px;
+		border-radius: 50px;
+	}
+</style>
